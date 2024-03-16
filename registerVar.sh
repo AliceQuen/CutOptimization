@@ -3,8 +3,8 @@
 # Substitute variables below to what you want 
 
 # Task information
-taskName='cutOpt5'
-dataDir="/home/qjk/JPsiX3872/Cut6/"
+taskName='cutOpt6'
+dataDir="/home/qjk/JPsiX3872/Cut9/"
 
 # Variables
 declare -a varName 
@@ -14,34 +14,12 @@ declare -a varMaxOpt # Range for cut to vary
 declare -a varMinOpt
 declare -a varType # Variable for deciding varying upper bundary or lower bundary. 0 for upper and 1 for lower
 
-#varName=(psi2s_jpsi_dR pi1 varMax=(0.0228 10000 10000 0.6492 1.7472 1.7472 10000.0 10000 10000 0.2944 0.2944 100 2.159 1.5320 3.74 3.74 3.632 3.632 0    .0476 0.0466 10000 10000)_pt pi2_pt pi_pi_dR pi1_eta_abs pi2_eta_abs psi2s_pt pi1_pz_abs pi2_pz_abs psi2s_pi1_dR
-#psi2s_pi2_dR tight_mu jpsi_eta_abs psi2s_eta_abs jpsi_mu1_dR jpsi_mu2_dR psi2s_mu1_dR psi2s_mu2_dR jpsi_mass_err
-#psi2s_mass_err jpsi_vtx psi2s_vtx)
-#varMax=(0.14 3.55 3.55 1.1 3.0 3.0 100.0 9.0 9.0 0.55 0.55 3.5 3.0 3.0 6.0 6.0 6.0 4.5 0.1 0.1 1.0 1.0)
-#varMin=(0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
-#varType=(0 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0) #  from cut2
-#
-
-#varName=(jpsi_eta_abs jpsi_mass_err jpsi_mu1_dR jpsi_mu2_dR pi_pi_dR pi1_eta_abs pi2_eta_abs pi1_pt pi2_pt psi2s_pi1_dR
-#	psi2s_pi2_dR psi2s_mu1_dR psi2s_mu2_dR psi2s_eta_abs psi2s_jpsi_dR psi2s_mass_err psi2s_pt)
-# varMax=(2.159 0.0476 3.74 3.74 0.6492 1.7472 1.7472 10000 10000 0.2994 0.2994 3.632 3.632 1.532 0.0228 0.04666 10000)
-# varMin=(-10000 -10000 -10000 -10000 -10000 -10000 -10000 0.772 0.772 -10000 -10000 -10000 -10000 -10000 -10000 -10000 11.736)
-# varMaxOpt=(2.4 0.06 4.5 4.5 0.8 2.0 2.0 1.25 1.25 0.35 0.35 4.0 4.0 2.50 0.04 0.065 20)
-# varMinOpt=(2.0 0.03 3.3 3.3 0.5 1.25 1.25 0.5 0.5 0.25 0.25 3.0 3.0 1.25 0.02 0.03 10)
-# varType=(0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1)
-# varMaxOpt=(2.175 0.050 3.85 3.85 0.67 1.8 1.8 0.82 0.82 0.315 0.315 3.8 3.8 2.3 0.035 0.053 13)
-# varMinOpt=(2.125 0.046 3.60 3.60 0.63 1.5 1.5 0.70 0.70 0.270 0.270 3.6	3.6 1.5 0.019 0.043 10)
-# varType=(0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1)
-
-
-varName=(psi2s_jpsi_dR pi1_pt pi2_pt pi_pi_dR pi1_eta_abs pi2_eta_abs psi2s_pt pi1_pz_abs pi2_pz_abs psi2s_pi1_dR
-psi2s_pi2_dR tight_mu jpsi_eta_abs psi2s_eta_abs jpsi_mu1_dR jpsi_mu2_dR psi2s_mu1_dR psi2s_mu2_dR jpsi_mass_err
-psi2s_mass_err jpsi_vtx psi2s_vtx)
-varMax=(0.0228 10000 10000 0.6492 1.7472 1.7472 10000.0 10000 10000 0.2944 0.2944 100 2.159 1.5320 3.74 3.74 3.632 3.632 0.0476 0.0466 10000 10000)
-varMin=(-10000 0.772 0.772 -10000 -10000 -10000 11.736 -10000 -10000 -10000 -10000 -100 -10000 -10000 -10000 -10000 -10000 -10000 -10000 -10000 -10000 -10000)
-varMaxOpt=(0.0228 3.55 3.55 0.6492 1.7472 1.7472 100.0 9.0 9.0 0.2944 0.2944 100 2.159 1.5320 3.74 3.74 3.632 3.632 0.0476 0.0466 1.0 1.0)
-varMinOpt=(0 0.772 0.772 0 0 0 11.736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
-varType=(0 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0) #  from cut2
+varName=(jpsi2_eta_abs jpsi2_massErr mu3_eta_abs mu4_eta_abs jpsi2_psi2s_dR)
+varMax=(10000 10000 10000 10000 10000)
+varMin=(-10000 -10000 -10000 -10000 -10000)
+varMaxOpt=(3 0.1 2.45 5.5)
+varMinOpt=(0 0 0 0 0)
+varType=(0 0 0 0 0) #  from cut9
 
 ################## Below is the functional part! Be careful when modifying it! ##################
 

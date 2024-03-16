@@ -28,7 +28,7 @@ void VarName_TaskName()
 		// The first cloumb should be Psi2s Mass and will be used for fitting
 		// Multi-files can be used, just substitute 'Data_List' with comma seperated file list
 
-		myresult myroofitresult = fitData(data);
+		myresult myroofitresult = fitData2D(data);
 		
 		//For good quality fit, save thier results
 		if (myroofitresult.fitquality == 1)

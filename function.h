@@ -87,6 +87,7 @@ void myset(TStyle *myStyle, RooArgSet &variables)
     //Please add all cut variables here
     //Cut variables are declared in var h file
     variables.add(psi2s_mass);
+    variables.add(jpsi_mass); // only for 2D fit, if use 1D fit, please delete this line
     //Add_Other_Variables_Here
 }
 
