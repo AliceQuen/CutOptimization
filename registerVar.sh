@@ -4,7 +4,7 @@
 
 # Task information
 taskName='cutOpt5'
-dataDir="/home/qjk/JPsiX3872/Cut4/"
+dataDir="/home/qjk/JPsiX3872/Cut6/"
 
 # Variables
 declare -a varName 
