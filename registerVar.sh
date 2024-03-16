@@ -3,7 +3,7 @@
 # Substitute variables below to what you want 
 
 # Task information
-taskName='cutOpt6'
+taskName='cutOpt7'
 dataDir="/home/qjk/JPsiX3872/Cut9/"
 
 # Variables
@@ -14,12 +14,12 @@ declare -a varMaxOpt # Range for cut to vary
 declare -a varMinOpt
 declare -a varType # Variable for deciding varying upper bundary or lower bundary. 0 for upper and 1 for lower
 
-varName=(jpsi2_eta_abs jpsi2_massErr mu3_eta_abs mu4_eta_abs jpsi2_psi2s_dR)
-varMax=(10000 10000 10000 10000 10000)
-varMin=(-10000 -10000 -10000 -10000 -10000)
-varMaxOpt=(3 0.1 2.45 5.5)
-varMinOpt=(0 0 0 0 0)
-varType=(0 0 0 0 0) #  from cut9
+varName=(jpsi2_eta_abs jpsi2_massErr jpsi2_psi2s_dR)
+varMax=(10000 10000 10000)
+varMin=(-10000 -10000 -10000)
+varMaxOpt=(2.7 0.068 5.5 5.5)
+varMinOpt=(2.1 0.04 3.1)
+varType=(0 0 0) #  from cut9
 
 ################## Below is the functional part! Be careful when modifying it! ##################
 
